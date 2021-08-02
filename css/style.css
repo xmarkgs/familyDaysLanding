@@ -1,0 +1,619 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: 'Comic Sans';
+  src: url("../media/Fonts/comic-sans-ms_[allfont.ru].ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comic Sans Bold';
+  src: url("../media/Fonts/comic-sans-ms-bold_[allfont.ru].ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+section {
+  width: 100%;
+}
+
+.content-container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Comic Sans Bold';
+  color: #FB3154;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+.icon-cover {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #F6DF39;
+  border-radius: 100px;
+}
+
+.icon-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.icon-text-container p {
+  font-family: 'Comfortaa';
+  font-size: 18px;
+  font-weight: 700;
+  color: #010101;
+}
+
+.cta {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  font-family: 'Comfortaa';
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  background: #FB3154;
+  border-radius: 100px;
+}
+
+/* Customize the label (the container) */
+.checkbox-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 138%;
+  color: #5E5E5E;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-wrap input {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  margin-top: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background: #F8F9FB;
+  -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-wrap:hover input ~ .checkmark {
+  background: #ecedf0;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-wrap input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-wrap input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-wrap .checkmark:after {
+  left: 10px;
+  top: 4px;
+  width: 7px;
+  height: 14px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.main-section {
+  min-height: 848px;
+  background: url("../media/Backgrounds/Фон Главная.png");
+  background-position: center;
+}
+
+header {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 236px);
+  height: 69px;
+  padding-top: 18px;
+}
+
+header .icon-cover {
+  width: 40px;
+  height: 40px;
+}
+
+.header__invitation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
+}
+
+.header__invitation .cta {
+  width: 193px;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.event-info-container {
+  position: relative;
+  margin-top: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.event-info-container .main-photos {
+  position: absolute;
+  top: -76px;
+  right: 0;
+}
+
+.event-info__text {
+  max-width: 591px;
+}
+
+.event-info__text span {
+  font-family: 'Comfortaa';
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 167%;
+  color: #010101;
+}
+
+.event-venue-date {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.event-venue-date .icon-cover {
+  width: 40px;
+  height: 40px;
+}
+
+.invitational_form {
+  margin-top: 84px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.form-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 24px 50px 30px 50px;
+  border: 1px solid #FB3154;
+  border-radius: 25px;
+}
+
+.form-border span {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #010101;
+}
+
+.form-inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-inputs input {
+  padding: 12px 20px;
+  background: #F8F9FB;
+  -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #010101;
+  border: 0;
+}
+
+.form-inputs input::-webkit-input-placeholder {
+  color: #010101;
+}
+
+.form-inputs input:-ms-input-placeholder {
+  color: #010101;
+}
+
+.form-inputs input::-ms-input-placeholder {
+  color: #010101;
+}
+
+.form-inputs input::placeholder {
+  color: #010101;
+}
+
+.form-inputs input:focus {
+  outline: 0;
+}
+
+.form-submission {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-submission .cta {
+  padding: 17px 66px;
+  border: 0;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.inviting-section {
+  margin-top: 105px;
+  padding-bottom: 34px;
+  background: url(../media/Backgrounds/Запрошуємо.png);
+  background-position: center;
+}
+
+.inviting-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 48px;
+          column-gap: 48px;
+}
+
+.inviting-text span {
+  margin-top: 10px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #010101;
+}
+
+.inviting-text span a {
+  text-decoration: none;
+  color: #FB3154;
+}
+
+.inviting-text p {
+  margin-top: 20px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #010101;
+}
+
+.section-programmes {
+  margin-top: 116px;
+  padding-bottom: 330px;
+  background: url("../media/Backgrounds/Для батьків.png");
+  background-position: center;
+}
+
+.program-for-parents-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  width: 100%;
+}
+
+.program-for-parents-container h4 {
+  width: 100%;
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.program__parent-quote {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360px;
+  padding: 0 30px 51px 30px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  border-bottom: 10px solid #F6DF39;
+}
+
+.program__parent-quote span {
+  margin-top: 15px;
+  font-family: 'Comic Sans Bold';
+  font-size: 18px;
+  line-height: 117%;
+  color: #010101;
+}
+
+.program__parent-quote small {
+  margin-top: 10px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #5E5E5E;
+}
+
+.program__parent-quote p {
+  margin-top: 10px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #010101;
+}
+
+.parent-quote__avatar {
+  margin-top: -40px;
+  width: 80px;
+}
+
+.program-for-kids-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  width: 100%;
+}
+
+.program-for-kids-container h4 {
+  width: 100%;
+  margin-bottom: 61px;
+  text-align: center;
+}
+
+.program-kids-col-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.program-kids__point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 21px;
+          column-gap: 21px;
+}
+
+.program-kids__point__text {
+  padding-top: 22px;
+}
+
+.program-kids__point__text span {
+  font-family: 'Comic Sans Bold';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 105%;
+  color: #010101;
+}
+
+.program-kids__point__text p {
+  margin-top: 10px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #010101;
+}
+
+.program-kids__point__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.program-kids__point__icon .icon-cover {
+  width: 80px;
+  height: 80px;
+}
+
+.program-kids__point__icon .program-kids__point__bullets {
+  margin: 8px 0;
+}
+
+.program-kids-col-left {
+  width: 348px;
+  padding-top: 20px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.program-kids-col-left .program-kids__point__text {
+  text-align: right;
+}
+
+.program-kids-col-right {
+  width: 348px;
+  padding-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */
