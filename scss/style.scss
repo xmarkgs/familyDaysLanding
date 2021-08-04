@@ -28,6 +28,7 @@ $dark-grey: #5E5E5E;
     padding: 0;
     box-sizing: border-box;
     -webkit-appearance: none;
+    scroll-behavior: smooth;
 }
 
 .page-container {
@@ -1183,6 +1184,10 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    .for-who-image {
+        width: 100%;
+    }
+
     section {
         background-position: bottom;
     }
