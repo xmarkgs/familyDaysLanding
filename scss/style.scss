@@ -284,13 +284,6 @@ header {
     text-decoration: none;
     z-index: 100;
 
-
-    &.active {
-        transition: .1s;
-        position: fixed;
-        top: 0;
-    }
-
     p {
         font-size: 12px;
         text-align: center;
@@ -1291,6 +1284,12 @@ footer {
         .icon-text-container {
             display: flex;
         }
+
+        &.active {
+            transition: .1s;
+            position: fixed;
+            top: 0;
+        }    
     }
 
     .icon-text-container {

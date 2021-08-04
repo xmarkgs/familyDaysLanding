@@ -302,13 +302,6 @@ header .icon-cover {
   z-index: 100;
 }
 
-.mobile-header.active {
-  -webkit-transition: .1s;
-  transition: .1s;
-  position: fixed;
-  top: 0;
-}
-
 .mobile-header p {
   font-size: 12px;
   text-align: center;
@@ -1456,6 +1449,12 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .mobile-header.active {
+    -webkit-transition: .1s;
+    transition: .1s;
+    position: fixed;
+    top: 0;
   }
   .icon-text-container.phone {
     margin-top: 30px;

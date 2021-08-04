@@ -38,8 +38,6 @@ $(document).ready(function () {
     let activationHeight = mainContent.offsetHeight;
     document.addEventListener('scroll', () => {
         let scrolled = window.scrollY;
-        console.log(scrolled);
-        console.log(activationHeight);
         if (scrolled >= activationHeight) {
             mobileHeader.classList.add('active');
         } else {
