@@ -295,13 +295,18 @@ header .icon-cover {
   height: -moz-fit-content;
   height: fit-content;
   padding: 4px;
-  background: white;
+  background: #c6ecb5;
   font-family: 'Comfortaa';
   font-size: 18px;
   font-weight: 700;
   color: #010101;
   text-decoration: none;
   z-index: 100;
+}
+
+.mobile-header p {
+  font-size: 12px;
+  text-align: center;
 }
 
 .header__invitation {
@@ -1434,6 +1439,18 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .mobile-header .header__invitation {
+    -webkit-column-gap: 12px;
+            column-gap: 12px;
+  }
+  .mobile-header .cta {
+    padding: 8px 0;
+  }
+  .mobile-header .icon-text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .icon-text-container.phone {
     margin-top: 30px;

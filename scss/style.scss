@@ -277,13 +277,18 @@ header {
     width: 100%;
     height: fit-content;
     padding: 4px;
-    background: white;
+    background: #c6ecb5;
     font-family: 'Comfortaa';
     font-size: 18px;
     font-weight: 700;
     color: #010101;
     text-decoration: none;
     z-index: 100;
+
+    p {
+        font-size: 12px;
+        text-align: center;
+    }
 }
 
 .header__invitation {
@@ -1268,6 +1273,18 @@ footer {
     .mobile-header {
         display: flex;
         justify-content: center;
+
+        .header__invitation {
+            column-gap: 12px;
+        }
+        
+        .cta {
+            padding: 8px 0;
+        }
+
+        .icon-text-container {
+            display: flex;
+        }
     }
 
     .icon-text-container {
