@@ -971,6 +971,21 @@ footer {
     header {
         width: 1140px;
     }
+
+    .main-content {
+        h1 {
+            font-size: 48px;
+        }
+
+        span {
+            font-size: 24px;
+        }
+
+        .main-photos {
+            top: -120px;
+            transform: scale(.8);
+        }
+    }
 }
 
 @media screen and (max-width: 1170px) {
