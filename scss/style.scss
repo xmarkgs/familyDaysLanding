@@ -814,6 +814,8 @@ header {
 }
 
 .territory__text {
+    display: flex;
+    flex-direction: column;
 
     p {
         margin-top: 20px;
@@ -823,6 +825,12 @@ header {
         font-size: 14px;
         line-height: 150%;
         color: $text-black;
+    }
+
+    span {
+        margin-top: 50px;
+        font-family: 'Comic Sans';
+        font-size: 18px;
     }
 }
 

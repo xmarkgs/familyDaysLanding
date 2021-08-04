@@ -978,6 +978,16 @@ header .icon-cover {
   padding: 0 5px;
 }
 
+.territory__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .territory__text p {
   margin-top: 20px;
   font-family: 'Comfortaa';
@@ -986,6 +996,12 @@ header .icon-cover {
   font-size: 14px;
   line-height: 150%;
   color: #010101;
+}
+
+.territory__text span {
+  margin-top: 50px;
+  font-family: 'Comic Sans';
+  font-size: 18px;
 }
 
 .territory__video {
