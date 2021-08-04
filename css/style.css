@@ -286,10 +286,8 @@ header .icon-cover {
 }
 
 .mobile-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  display: none;
+  position: fixed;
+  top: -50px;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -302,6 +300,13 @@ header .icon-cover {
   color: #010101;
   text-decoration: none;
   z-index: 100;
+}
+
+.mobile-header.active {
+  -webkit-transition: .1s;
+  transition: .1s;
+  position: fixed;
+  top: 0;
 }
 
 .mobile-header p {

@@ -271,9 +271,8 @@ header {
 }
 
 .mobile-header {
-    position: sticky;
-    top: 0;
-    display: none;
+    position: fixed;
+    top: -50px;
     width: 100%;
     height: fit-content;
     padding: 4px;
@@ -284,6 +283,13 @@ header {
     color: #010101;
     text-decoration: none;
     z-index: 100;
+
+
+    &.active {
+        transition: .1s;
+        position: fixed;
+        top: 0;
+    }
 
     p {
         font-size: 12px;
@@ -1277,7 +1283,7 @@ footer {
         .header__invitation {
             column-gap: 12px;
         }
-        
+
         .cta {
             padding: 8px 0;
         }

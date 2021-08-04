@@ -32,4 +32,18 @@ $(document).ready(function () {
             window.location.replace('thanks.html');
         }
     });
+
+    let mobileHeader = document.querySelector('.mobile-header');
+    let mainContent = document.querySelector('.main-content');
+    let activationHeight = mainContent.offsetHeight;
+    document.addEventListener('scroll', () => {
+        let scrolled = window.scrollY;
+        console.log(scrolled);
+        console.log(activationHeight);
+        if (scrolled >= activationHeight) {
+            mobileHeader.classList.add('active');
+        } else {
+            mobileHeader.classList.remove('active');
+        }
+    });
 });
