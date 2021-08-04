@@ -3,12 +3,23 @@
 
 <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K7M8H5');</script>
-    <!-- End Google Tag Manager -->    
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K7M8H5');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,10 +31,33 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7M8H5"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7M8H5" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="page-container">
+        <header class="mobile-header">15 та 22 серпня</header>
+        <div id="mobile-popup">
+            <div action="" class="invitational_form">
+                <div class="form-border">
+                    <h5>Тільки 50 місць на заході!</h5>
+                    <span>Познайомтесь з найкращою школою України та проведіть весело час з родиною🤩</span>
+                    <!-- <div class="form-inputs">
+                        <input type="text" name="name" id="form-1-name" placeholder="Ім'я" required>
+                        <input type="text" name="phone" id="form-1-phone" placeholder="Телефон" required>
+                        <input type="email" name="email" id="form-1-email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form-submission">
+                        <input type="submit" value="Отримати запрошення" class="cta">
+                        <label for="form-1-agreement" class="checkbox-wrap">
+                            <input type="checkbox" name="form-agreement" id="form-1-agreement" required>
+                            <span class="checkmark"></span>
+                            Натискаючи кнопку, я погоджуюсь на обробку персональних даних
+                        </label>
+                    </div> -->
+                    <div id="form_161634_1"></div>
+                </div>
+            </div>
+        </div>
         <main>
             <section class="main-section">
                 <header>
@@ -39,12 +73,6 @@
                     </div>
                 </header>
                 <div class="content-container main-content">
-                    <div class="icon-text-container phone">
-                        <div class="icon-cover">
-                            <img src="media/01 Main/phone_black_24dp 1.svg" alt="">
-                        </div>
-                        <a href="tel: 044 500 03 20">044 500 03 20</a>
-                    </div>
                     <div class="event-info-container">
                         <div class="event-info__text">
                             <h1>Family Days</h1>
@@ -63,6 +91,8 @@
                                     <p>Admiral Grand Resort & Spa</p>
                                 </div>
                             </div>
+                            <a data-fancybox data-src="#mobile-popup" href="javascript:;"
+                                class="cta invite-cta-mobile">Запрошення</a>
                         </div>
                         <img src="media/01 Main/Фото.png" alt="" class="main-photos">
                     </div>
@@ -881,6 +911,50 @@
                 nocookie: 1,
                 fields: {
                     field1710752: getParams.gclid || ''
+                }
+            });
+            var s = d.createElement("script"),
+                g = "getElementsByTagName";
+            s.type = "text/javascript";
+            s.charset = "UTF-8";
+            s.async = false;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//formdesigner.ru/js/iform.js";
+            var h = d[g]("head")[0] || d[g]("body")[0];
+            h.appendChild(s);
+        })(document, window, "fdforms");
+    </script>
+
+    <!-- popup -->
+    <script type="text/javascript">
+        function parseGetParams() {
+            var c, g, d, a, h, e, b = {},
+                f = function (a) {
+                    return decodeURIComponent(a).replace(/\+/g, " ")
+                },
+                k = window.location.search.substring(1),
+                l = /([^&;=]+)=?([^&;]*)/g;
+            for (h = function (a) {
+                    "object" != typeof a && (g = a, a = {
+                        length: 0
+                    }, g && Array.prototype.push.call(a, g));
+                    return a
+                }; d = l.exec(k);) c = d[1].indexOf("["), e = f(d[2]), 0 > c ? (a = f(d[1]), b[a] ? (b[a] = h(b[a]),
+                Array.prototype.push.call(b[a], e)) : b[a] = e) : (a = f(d[1].slice(0, c)), c = f(d[1].slice(c + 1,
+                d[1].indexOf("]", c))), b[a] = h(b[a]), c ? b[a][c] = e : Array.prototype.push.call(b[a], e));
+            return b
+        };
+
+        var getParams = parseGetParams();
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push({
+                formId: 161634,
+                host: "formdesigner.ru",
+                formHeight: 391,
+                el: "form_161634_1",
+                center: 0,
+                nocookie: 1,
+                fields: {
+                    field1711538: getParams.gclid || ''
                 }
             });
             var s = d.createElement("script"),

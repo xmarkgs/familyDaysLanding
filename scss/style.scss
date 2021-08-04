@@ -98,7 +98,8 @@ h5 {
         display: none;
     }
 
-    a, p {
+    a,
+    p {
         font-family: 'Comfortaa';
         font-size: 18px;
         font-weight: 700;
@@ -134,6 +135,30 @@ h5 {
         margin-top: 30px;
         width: 60%;
         padding: 18px 0;
+    }
+
+    &.invite-cta-mobile {
+        display: none;
+        padding: 18px 0;
+    }
+}
+
+#mobile-popup {
+    display: none;
+
+    .invitational_form {
+        margin-top: 12px;
+        box-shadow: 0px 0px 0px transparent;
+        border-radius: 0;
+        width: 100%;
+
+        .form-border {
+            border-radius: 0;
+        }
+    }
+
+    &.fancybox-content {
+        padding: 24px;
     }
 }
 
@@ -243,6 +268,22 @@ header {
         width: 40px;
         height: 40px;
     }
+}
+
+.mobile-header {
+    position: sticky;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: fit-content;
+    padding: 4px;
+    background: white;
+    font-family: 'Comfortaa';
+    font-size: 18px;
+    font-weight: 700;
+    color: #010101;
+    text-decoration: none;
+    z-index: 100;
 }
 
 .header__invitation {
@@ -842,7 +883,7 @@ header {
     a:nth-child(1) {
         position: absolute;
         transition: .1s;
-        
+
         &:hover {
             transform: scale(1.1);
         }
@@ -1216,11 +1257,17 @@ footer {
     }
 
     header {
+        display: none;
         width: 95%;
 
         .icon-text-container {
             display: none;
         }
+    }
+
+    .mobile-header {
+        display: flex;
+        justify-content: center;
     }
 
     .icon-text-container {
@@ -1260,7 +1307,14 @@ footer {
 
     .main-content {
         .invitational_form {
+            display: none;
             margin-top: -95px;
+        }
+    }
+
+    .cta {
+        &.invite-cta-mobile {
+            display: grid;
         }
     }
 
@@ -1320,7 +1374,7 @@ footer {
                 .program-kids__point__text {
                     text-align: left;
                 }
-               
+
             }
         }
 
@@ -1360,7 +1414,7 @@ footer {
         padding-bottom: 56px;
     }
 
-    .feature-point > img {
+    .feature-point>img {
         display: block;
         width: 100%;
     }
@@ -1385,7 +1439,7 @@ footer {
         flex-direction: column;
     }
 
-    .footer__info > img {
+    .footer__info>img {
         width: 120px;
     }
 
@@ -1399,5 +1453,10 @@ footer {
 
     h4 {
         font-size: 24px;
+    }
+
+    .feature-point__text__switcher {
+        order: -20;
+        margin-bottom: 24px;
     }
 }

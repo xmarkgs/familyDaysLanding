@@ -104,7 +104,8 @@ h5 {
   display: none;
 }
 
-.icon-text-container a, .icon-text-container p {
+.icon-text-container a,
+.icon-text-container p {
   font-family: 'Comfortaa';
   font-size: 18px;
   font-weight: 700;
@@ -141,6 +142,31 @@ h5 {
   margin-top: 30px;
   width: 60%;
   padding: 18px 0;
+}
+
+.cta.invite-cta-mobile {
+  display: none;
+  padding: 18px 0;
+}
+
+#mobile-popup {
+  display: none;
+}
+
+#mobile-popup .invitational_form {
+  margin-top: 12px;
+  -webkit-box-shadow: 0px 0px 0px transparent;
+          box-shadow: 0px 0px 0px transparent;
+  border-radius: 0;
+  width: 100%;
+}
+
+#mobile-popup .invitational_form .form-border {
+  border-radius: 0;
+}
+
+#mobile-popup.fancybox-content {
+  padding: 24px;
 }
 
 /* Customize the label (the container) */
@@ -257,6 +283,25 @@ header {
 header .icon-cover {
   width: 40px;
   height: 40px;
+}
+
+.mobile-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4px;
+  background: white;
+  font-family: 'Comfortaa';
+  font-size: 18px;
+  font-weight: 700;
+  color: #010101;
+  text-decoration: none;
+  z-index: 100;
 }
 
 .header__invitation {
@@ -1376,10 +1421,19 @@ footer {
     background-position: bottom;
   }
   header {
+    display: none;
     width: 95%;
   }
   header .icon-text-container {
     display: none;
+  }
+  .mobile-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .icon-text-container.phone {
     margin-top: 30px;
@@ -1414,7 +1468,12 @@ footer {
     margin-bottom: 10px;
   }
   .main-content .invitational_form {
+    display: none;
     margin-top: -95px;
+  }
+  .cta.invite-cta-mobile {
+    display: -ms-grid;
+    display: grid;
   }
   .form-border {
     padding: 12px 20px;
@@ -1545,6 +1604,12 @@ footer {
   }
   h4 {
     font-size: 24px;
+  }
+  .feature-point__text__switcher {
+    -webkit-box-ordinal-group: -19;
+        -ms-flex-order: -20;
+            order: -20;
+    margin-bottom: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
