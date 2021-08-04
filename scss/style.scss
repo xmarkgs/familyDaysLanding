@@ -27,6 +27,7 @@ $dark-grey: #5E5E5E;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-appearance: none;
 }
 
 .page-container {
@@ -96,11 +97,19 @@ h5 {
         display: none;
     }
 
-    p {
+    a, p {
         font-family: 'Comfortaa';
         font-size: 18px;
         font-weight: 700;
         color: $text-black;
+        text-decoration: none;
+    }
+
+    &:hover {
+        a {
+            transition: .1s;
+            color: $accent-red;
+        }
     }
 }
 
@@ -114,6 +123,11 @@ h5 {
     text-decoration: none;
     background: $accent-red;
     border-radius: 100px;
+    transition: .1s;
+
+    &:hover {
+        background: rgb(209, 51, 77);
+    }
 }
 
 /* Customize the label (the container) */
@@ -807,6 +821,11 @@ header {
 
     a:nth-child(1) {
         position: absolute;
+        transition: .1s;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
