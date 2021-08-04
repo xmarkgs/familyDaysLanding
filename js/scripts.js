@@ -22,10 +22,13 @@ $(document).ready(function () {
     var mask3 = IMask(input3, maskOptions3);
 
     // Form Submission
-    $('.invitational_form_big, .invitational_form').ajaxSubmit({
+    $('#form_161570').ajaxSubmit({
         url: "",
         type: "POST",
         success: function (data, status) {
+            window.location.replace('thanks.html');
+        },
+        error: function (data, status) {
             window.location.replace('thanks.html');
         }
     });

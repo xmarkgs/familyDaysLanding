@@ -128,6 +128,12 @@ h5 {
     &:hover {
         background: rgb(209, 51, 77);
     }
+
+    &.cta-back-home {
+        margin-top: 30px;
+        width: 60%;
+        padding: 18px 0;
+    }
 }
 
 /* Customize the label (the container) */
@@ -217,6 +223,11 @@ h5 {
     min-height: 848px;
     background: url('../media/Backgrounds/Фон Главная.png');
     background-position: center;
+
+    &.thanks {
+        background: url('../media/Backgrounds/Фон Главная.jpg');
+        background-size: cover;
+    }
 }
 
 header {
